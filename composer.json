@@ -1,0 +1,29 @@
+{
+    "name": "root/boilerplate-wordpress-composer",
+    "authors": [
+      {
+        "name": "Romulo Assis",
+        "email": "romuloassis.as@gmail.com"
+      }
+    ],
+  "config": {
+    "secure-http": false
+  },
+  "repositories": [
+      {
+        "type": "composer",
+        "url": "http://wpackagist.org"
+      }
+    ],
+    "require": {
+      "johnpbloch/wordpress": "4.7.*"
+    },
+    "extra": {
+      "wordpress-install-dir": "wp"
+    },
+    "scripts": {
+      "start": [
+        "php -S localhost:8888 -t . index.php"
+      ]
+    }
+}
