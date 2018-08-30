@@ -1,5 +1,4 @@
 <?php
-require('.env-config.php');
 /**
  * The base configuration for WordPress
  *
@@ -18,8 +17,6 @@ require('.env-config.php');
  *
  * @package WordPress
  */
-
-$caminhoAbsolutoPasta = "";
 
 $caminhoAbsolutoPasta = "";
 
@@ -99,3 +96,5 @@ if (!defined('ABSPATH'))
 
 /** Sets up WordPress vars and included files. */
 require_once(ABSPATH . 'wp-settings.php');
+
+define('FS_METHOD', 'direct');
